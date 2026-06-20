@@ -52,12 +52,22 @@ const categories = [
 ];
 
 const products = [
-  { name: "CNC Control Panel Unit", desc: "Industrial-grade control unit with HMI interface and I/O modules.", img: pControlPanel },
-  { name: "Servo Motor Driver", desc: "High-precision servo driver with adaptive tuning and feedback loop.", img: pServoDriver },
-  { name: "EDM Wire Guide Set", desc: "Diamond-tipped guide assembly for high-accuracy EDM wire cutting.", img: pEdmWire },
-  { name: "Spindle Motor Kit", desc: "High-RPM spindle motor with bearings and mounting hardware.", img: pSpindle },
-  { name: "Linear Guide Rail System", desc: "Precision-ground linear motion rail for smooth axis travel.", img: pLinearRail },
-  { name: "Power Supply Module", desc: "Stable industrial DC power supply for control cabinets.", img: pPowerSupply },
+  { name: "Spindle BT 40", desc: "Precision BT40 taper spindle for CNC machining centers.", img: pSpindle },
+  { name: "SPINDLE WATER COOLER", desc: "Industrial cooling system for high-speed spindle temperature control.", img: pPowerSupply },
+  { name: "HYDRAULIC CHUCK", desc: "High-clamping-force hydraulic workholding chuck for CNC operations.", img: pControlPanel },
+  { name: "XX-XY-YY FANUC DRIVER SOCKETS", desc: "Fanuc-compatible driver connection sockets for axis control.", Icon: CircuitBoard },
+  { name: "6-10-20 PIN FANUC DRIVER SOCKETS", desc: "Multi-pin Fanuc driver cable sockets for servo systems.", Icon: CircuitBoard },
+  { name: "SERVO MOTOR SOCKET", desc: "Standard servo motor power and feedback socket assembly.", img: pServoDriver },
+  { name: "WIRED HANDWHEEL", desc: "Manual pulse generator handwheel for precise CNC axis control.", Icon: Cpu },
+  { name: "EDM CUTTING FLUID", desc: "High-performance dielectric fluid for EDM machining operations.", Icon: Zap },
+  { name: "EDM CUTTING JELLY", desc: "Specialized jelly compound for wire-cut EDM applications.", Icon: Zap },
+  { name: "EDM FILTER", desc: "Filtration cartridge for maintaining EDM dielectric system purity.", Icon: Cog },
+  { name: "0.188 mm MOLYBDENUM", desc: "0.188mm diameter molybdenum wire for precision wire-cut EDM.", img: pEdmWire },
+  { name: "WIRE GUIDE NOZZLES", desc: "Precision nozzles for EDM wire guide assemblies.", img: pLinearRail },
+  { name: "CARBIDE CONTACT BLOCKS", desc: "Tungsten carbide contact blocks for EDM machine electrodes.", Icon: Wrench },
+  { name: "CARBIDE WEAR BLOCKS", desc: "Wear-resistant carbide blocks for extended industrial use.", Icon: Wrench },
+  { name: "BEARING ROLLERS", desc: "Precision bearing rollers for smooth linear motion systems.", Icon: Cog },
+  { name: "Wire-Cut EDM", desc: "Complete wire-cut EDM machine setup and replacement accessories.", Icon: Bot },
 ];
 
 const reasons = [
@@ -212,28 +222,34 @@ function Index() {
           <div className="max-w-2xl mb-16">
             <div className="accent-bar mb-6" />
             <h2 className="font-display text-4xl md:text-5xl font-bold">Featured Products</h2>
-            <p className="mt-4 text-muted-foreground text-lg">A selection of our most-requested industrial components.</p>
+            <p className="mt-4 text-muted-foreground text-lg">Our complete range of CNC spare parts and industrial components.</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((p) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {products.map((p: any) => (
               <div
                 key={p.name}
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-all duration-300"
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
                 <div className="aspect-[4/3] overflow-hidden bg-background">
-                  <img
-                    src={p.img}
-                    alt={p.name}
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {p.img ? (
+                    <img
+                      src={p.img}
+                      alt={p.name}
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : p.Icon ? (
+                    <div className="h-full w-full bg-surface/60 grid place-items-center">
+                      <p.Icon className="h-12 w-12 text-primary/60 group-hover:text-primary transition-colors duration-300" />
+                    </div>
+                  ) : null}
                 </div>
                 <div className="p-6">
                   <div className="text-[10px] uppercase tracking-widest text-primary font-semibold mb-2">Industrial Grade</div>
-                  <h3 className="font-display text-xl font-bold mb-2">{p.name}</h3>
+                  <h3 className="font-display text-lg font-bold mb-2">{p.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
                 </div>
               </div>
