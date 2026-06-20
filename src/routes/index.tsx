@@ -276,9 +276,9 @@ function Index() {
                 <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">Request a Quote Today</h2>
                 <p className="mt-4 text-muted-foreground text-lg">Tell us your requirements and our engineers will respond within one business day.</p>
                 <div className="mt-8 space-y-4 text-sm">
-                  <a href="mailto:mufazimpex@gmail.com" className="flex items-center gap-3 hover:text-foreground transition-colors"><Mail className="h-5 w-5 text-primary shrink-0" /> mufazimpex@gmail.com</a>
-                  <a href="tel:+886972197644" className="flex items-center gap-3 hover:text-foreground transition-colors"><Phone className="h-5 w-5 text-primary shrink-0" /> 0972-197644</a>
-                  <div className="flex items-start gap-3"><MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span>3rd Floor, No.3, Lane 982, Road Xiangxin South, Nantun District, Taichung City, Taiwan (R.O.C)</span></div>
+                  <div className="flex items-center gap-3"><Mail className="h-5 w-5 text-primary" /> sales@mufazimpex.com</div>
+                  <div className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /> +91 00000 00000</div>
+                  <div className="flex items-center gap-3"><MapPin className="h-5 w-5 text-primary" /> Industrial Hub, India</div>
                 </div>
               </div>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
