@@ -15,12 +15,22 @@ import {
   MapPin,
 } from "lucide-react";
 import heroImg from "@/assets/hero-cnc.jpg";
-import pControlPanel from "@/assets/p-control-panel.jpg";
-import pServoDriver from "@/assets/p-servo-driver.jpg";
-import pEdmWire from "@/assets/p-edm-wire.jpg";
-import pSpindle from "@/assets/p-spindle.jpg";
-import pLinearRail from "@/assets/p-linear-rail.jpg";
-import pPowerSupply from "@/assets/p-power-supply.jpg";
+import aSpindleBt40 from "@/assets/products/spindle-bt40.jpg.asset.json";
+import aSpindleCooler from "@/assets/products/spindle-water-cooler.jpg.asset.json";
+import aHydraulicChuck from "@/assets/products/hydraulic-chuck.jpg.asset.json";
+import aFanucXxXyYy from "@/assets/products/fanuc-driver-sockets-xx-xy-yy.jpg.asset.json";
+import aFanucPin from "@/assets/products/fanuc-driver-sockets-pin.jpg.asset.json";
+import aServoSocket from "@/assets/products/servo-motor-socket.jpg.asset.json";
+import aWiredHandwheel from "@/assets/products/wired-handwheel.jpg.asset.json";
+import aEdmFluid from "@/assets/products/edm-cutting-fluid.jpg.asset.json";
+import aEdmJelly from "@/assets/products/edm-cutting-jelly.jpg.asset.json";
+import aEdmFilter from "@/assets/products/edm-filter.jpg.asset.json";
+import aMolybdenum from "@/assets/products/molybdenum-wire.jpg.asset.json";
+import aWireGuideNozzles from "@/assets/products/wire-guide-nozzles.jpg.asset.json";
+import aCarbideContact from "@/assets/products/carbide-contact-blocks.jpg.asset.json";
+import aCarbideWear from "@/assets/products/carbide-wear-blocks.jpg.asset.json";
+import aBearingRollers from "@/assets/products/bearing-rollers.jpg.asset.json";
+import aWireCutEdm from "@/assets/products/wire-cut-edm.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
