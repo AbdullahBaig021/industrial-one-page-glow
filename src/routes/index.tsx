@@ -62,22 +62,22 @@ const categories = [
 ];
 
 const products = [
-  { name: "Spindle BT 40", desc: "Precision BT40 taper spindle for CNC machining centers.", img: pSpindle },
-  { name: "SPINDLE WATER COOLER", desc: "Industrial cooling system for high-speed spindle temperature control.", img: pPowerSupply },
-  { name: "HYDRAULIC CHUCK", desc: "High-clamping-force hydraulic workholding chuck for CNC operations.", img: pControlPanel },
-  { name: "XX-XY-YY FANUC DRIVER SOCKETS", desc: "Fanuc-compatible driver connection sockets for axis control.", Icon: CircuitBoard },
-  { name: "6-10-20 PIN FANUC DRIVER SOCKETS", desc: "Multi-pin Fanuc driver cable sockets for servo systems.", Icon: CircuitBoard },
-  { name: "SERVO MOTOR SOCKET", desc: "Standard servo motor power and feedback socket assembly.", img: pServoDriver },
-  { name: "WIRED HANDWHEEL", desc: "Manual pulse generator handwheel for precise CNC axis control.", Icon: Cpu },
-  { name: "EDM CUTTING FLUID", desc: "High-performance dielectric fluid for EDM machining operations.", Icon: Zap },
-  { name: "EDM CUTTING JELLY", desc: "Specialized jelly compound for wire-cut EDM applications.", Icon: Zap },
-  { name: "EDM FILTER", desc: "Filtration cartridge for maintaining EDM dielectric system purity.", Icon: Cog },
-  { name: "0.188 mm MOLYBDENUM", desc: "0.188mm diameter molybdenum wire for precision wire-cut EDM.", img: pEdmWire },
-  { name: "WIRE GUIDE NOZZLES", desc: "Precision nozzles for EDM wire guide assemblies.", img: pLinearRail },
-  { name: "CARBIDE CONTACT BLOCKS", desc: "Tungsten carbide contact blocks for EDM machine electrodes.", Icon: Wrench },
-  { name: "CARBIDE WEAR BLOCKS", desc: "Wear-resistant carbide blocks for extended industrial use.", Icon: Wrench },
-  { name: "BEARING ROLLERS", desc: "Precision bearing rollers for smooth linear motion systems.", Icon: Cog },
-  { name: "Wire-Cut EDM", desc: "Complete wire-cut EDM machine setup and replacement accessories.", Icon: Bot },
+  { name: "Spindle BT 40", desc: "Precision BT40 taper spindle for CNC machining centers.", img: aSpindleBt40.url },
+  { name: "Spindle Water Cooler", desc: "Industrial cooling system for high-speed spindle temperature control.", img: aSpindleCooler.url },
+  { name: "Hydraulic Chuck", desc: "High-clamping-force hydraulic workholding chuck for CNC operations.", img: aHydraulicChuck.url },
+  { name: "XX-XY-YY Fanuc Driver Sockets", desc: "Fanuc-compatible driver connection sockets for axis control.", img: aFanucXxXyYy.url },
+  { name: "6-10-20 Pin Fanuc Driver Sockets", desc: "Multi-pin Fanuc driver cable sockets for servo systems.", img: aFanucPin.url },
+  { name: "Servo Motor Socket", desc: "Standard servo motor power and feedback socket assembly.", img: aServoSocket.url },
+  { name: "Wired Handwheel", desc: "Manual pulse generator handwheel for precise CNC axis control.", img: aWiredHandwheel.url },
+  { name: "EDM Cutting Fluid", desc: "High-performance dielectric fluid for EDM machining operations.", img: aEdmFluid.url },
+  { name: "EDM Cutting Jelly", desc: "Specialized jelly compound for wire-cut EDM applications.", img: aEdmJelly.url },
+  { name: "EDM Filter", desc: "Filtration cartridge for maintaining EDM dielectric system purity.", img: aEdmFilter.url },
+  { name: "0.188 mm Molybdenum", desc: "0.188mm diameter molybdenum wire for precision wire-cut EDM.", img: aMolybdenum.url },
+  { name: "Wire Guide Nozzles", desc: "Precision nozzles for EDM wire guide assemblies.", img: aWireGuideNozzles.url },
+  { name: "Carbide Contact Blocks", desc: "Tungsten carbide contact blocks for EDM machine electrodes.", img: aCarbideContact.url },
+  { name: "Carbide Wear Blocks", desc: "Wear-resistant carbide blocks for extended industrial use.", img: aCarbideWear.url },
+  { name: "Bearing Rollers", desc: "Precision bearing rollers for smooth linear motion systems.", img: aBearingRollers.url },
+  { name: "Wire-Cut EDM", desc: "Complete wire-cut EDM machine setup and replacement accessories.", img: aWireCutEdm.url },
 ];
 
 const reasons = [
